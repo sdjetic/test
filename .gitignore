@@ -1,0 +1,5 @@
+*.class
+/class
+__*
+!__Ok.txt
+*.png
