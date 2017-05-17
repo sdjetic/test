@@ -1,0 +1,126 @@
+*{
+	max-width:960px;
+	font-family: 'Kaushan Script', cursive;
+}
+
+html{
+	background-color: #f3b717;
+	margin:auto;
+	min-width:640px;
+}
+
+figure{
+	padding:0;
+	margin:0;
+	position:relative;
+	overflow:hidden;
+	height:240px;
+}
+
+figure:hover .anim{
+	bottom:0px;
+	transition: bottom 0.5s linear;
+}
+
+.banner{
+	border-radius:8px;
+}
+
+.anim{
+	background-color:rgba(0,0,0,0.5);
+	border-radius:8px;
+	position:absolute;
+	width:100%;
+	color:white;
+	bottom:-46px;
+}
+
+.titre{
+	display:flex;
+}
+
+.sous-titre{
+	display:flex;
+	list-style-type:none;
+	justify-content: space-between;
+}
+
+nav>ul{
+	display:flex;
+	list-style-type:none;
+}
+
+nav>ul>li{
+	margin:5px;
+}
+
+nav>ul>li>a:link{
+	color:black;
+	text-decoration:none;
+	text-transform: uppercase;
+}
+
+nav>ul>li>a:hover{
+	color:white;
+}
+
+.main-titre{
+	display:flex;
+}
+
+.aside{
+	display:flex;
+	flex-direction:column;
+	color:white;
+}
+
+aside{
+	background-color: #376437;
+	border-radius:8px;
+	margin:5px;
+	padding:10px;
+	max-width:200px;
+}
+
+.main{
+	display:flex;
+}
+
+.liens{
+	text-align:right;
+}
+
+aside>ul{
+	padding:0;
+}
+
+aside>ul>li{
+	list-style-type:none;
+}
+
+@media all and (max-width:640px){
+	html{
+	min-width:320px;
+}
+	
+	figure{
+	overflow:visible;
+	height:240px;
+}
+
+	.anim{
+		bottom:0px;
+	}
+
+	.sous-titre{
+		flex-direction:column;
+	}
+	
+	.main{
+		flex-direction:column;
+	}
+
+	nav>ul{
+	flex-direction:column;
+}
+}
